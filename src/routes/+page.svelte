@@ -8,7 +8,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	.container {
 		flex-direction: column;
 		margin: auto;
@@ -26,6 +26,26 @@
 		height: 100%;
 		text-align: center;
 		user-select: none;
+
+		h1 {
+			font-size: 13rem;
+			font-weight: 400;
+			margin-bottom: 2rem;
+		}
+		h2 {
+			font-family: 'PPRightGothic-Wide';
+			font-size: 6rem;
+			font-weight: 800;
+		}
+		p {
+			position: absolute;
+			bottom: 0;
+			right: 2rem;
+			font-size: 2.5rem;
+			font-weight: 200;
+			align-self: flex-end;
+			margin-bottom: 2rem;
+		}
 	}
 
 	.banner-center {
@@ -34,25 +54,5 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 100%;
-	}
-
-	.main-banner h1 {
-		font-size: 13rem;
-		font-weight: 400;
-		margin-bottom: 2rem;
-	}
-	.main-banner h2 {
-		font-family: 'PPRightGothic-Wide';
-		font-size: 6rem;
-		font-weight: 800;
-	}
-	.main-banner p {
-		position: absolute;
-		bottom: 0;
-		right: 2rem;
-		font-size: 2.5rem;
-		font-weight: 200;
-		align-self: flex-end;
-		margin-bottom: 2rem;
 	}
 </style>

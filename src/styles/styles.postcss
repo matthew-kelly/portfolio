@@ -1,7 +1,7 @@
 @layer baseline, utilities;
 
-@import url('reset.css');
-@import url('fonts.css');
+@import url('reset.postcss');
+@import url('fonts.postcss');
 
 @layer baseline {
 	* {
@@ -13,10 +13,11 @@
 	.container {
 		display: flex;
 		position: relative;
-	}
-	.container.center {
-		justify-content: center;
-		align-items: center;
+
+		&.center {
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	.serif {

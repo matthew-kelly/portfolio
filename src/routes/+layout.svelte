@@ -1,10 +1,9 @@
 <script lang="ts">
-	import '../styles/styles.css';
+	import '../styles/styles.postcss';
 	import Marquee from './Marquee.svelte';
 
 	let marqueeLeft = true;
 	let marqueeRight = true;
-	let marqueeMargin = 107;
 </script>
 
 <div class="body">
@@ -19,13 +18,7 @@
 		</Marquee>
 	{/if}
 
-	<div
-		class="content"
-		style="
-    --marginLeft: {marqueeLeft ? `${marqueeMargin}px` : '0'};
-    --marginRight: {marqueeRight ? `${marqueeMargin}px` : '0'};
-    "
-	>
+	<div class="content">
 		<slot />
 	</div>
 
@@ -41,7 +34,7 @@
 	{/if}
 </div>
 
-<style>
+<style lang="postcss">
 	.body {
 		min-height: 100dvh;
 		width: 100dvw;
@@ -53,12 +46,9 @@
 
 	.content {
 		margin: 0;
-		margin-left: var(--marginLeft);
-		margin-right: var(--marginRight);
 		display: flex;
 		position: relative;
 		width: 100%;
-		/* TODO: animate margin transition */
 	}
 
 	.pad {

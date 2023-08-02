@@ -88,7 +88,7 @@
 	{/if}
 </div>
 
-<style>
+<style lang="postcss">
 	.container {
 		position: fixed;
 		top: 0;
@@ -157,12 +157,13 @@
 			bottom: 0;
 			right: 4px;
 		}
-	}
-	.scrolling :global(> *) {
-		font-size: 4rem;
-		white-space: nowrap;
-		line-height: 5rem;
-		cursor: default;
-		user-select: none;
+
+		:global(> *) {
+			font-size: 4rem;
+			white-space: nowrap;
+			line-height: 5rem;
+			cursor: default;
+			user-select: none;
+		}
 	}
 </style>
