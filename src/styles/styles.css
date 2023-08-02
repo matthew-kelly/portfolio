@@ -1,0 +1,40 @@
+@layer baseline, utilities;
+
+@import url('reset.css');
+@import url('fonts.css');
+
+@layer baseline {
+	* {
+		font-family: 'PPEditorialNew';
+	}
+}
+
+@layer utilities {
+	.container {
+		display: flex;
+		position: relative;
+	}
+	.container.center {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.serif {
+		font-family: 'PPEditorialNew';
+	}
+	.sans {
+		font-family: 'PPRightGothic';
+	}
+	.sans-wide {
+		font-family: 'PPRightGothic-Wide';
+	}
+	.italic {
+		font-style: italic;
+	}
+	.ultralight {
+		font-weight: 200;
+	}
+	.ultrabold {
+		font-weight: 800;
+	}
+}
