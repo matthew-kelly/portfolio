@@ -53,21 +53,21 @@
 	const speedUp = () => {
 		gsap.to(textScrolling, {
 			duration: 0.5,
-			timeScale: 5,
+			timeScale: 4,
 		});
 		gsap.to(border1, {
 			duration: 0.3,
-			y: '+=100%',
+			x: side === 'left' ? '-=6px' : '+=6px',
 		});
 	};
 	const slowDown = () => {
 		gsap.to(textScrolling, {
-			duration: 0.5,
+			duration: 0.3,
 			timeScale: 1,
 		});
 		gsap.to(border1, {
-			duration: 0.3,
-			y: 0,
+			duration: 0.2,
+			x: 0,
 		});
 	};
 </script>
@@ -90,16 +90,20 @@
 
 <style>
 	.container {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+
 		&.left {
 			--rotate: 0;
 			--writing-mode: vertical-rl;
-
+			left: 0;
 			padding-left: 5rem;
 		}
 		&.right {
 			--rotate: 180deg;
 			--writing-mode: vertical-lr;
-
+			right: 0;
 			padding-right: 5rem;
 		}
 	}

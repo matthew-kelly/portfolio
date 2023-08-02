@@ -1,7 +1,11 @@
 <div class="container center">
-	<h1>Matt Kelly</h1>
-	<h2>web developer</h2>
-	<p>*and sourdough baker</p>
+	<div class="main-banner">
+		<div class="banner-center">
+			<h1>Matt Kelly</h1>
+			<h2>web developer</h2>
+		</div>
+		<p>*and sourdough baker</p>
+	</div>
 </div>
 
 <style>
@@ -13,17 +17,36 @@
 		width: 100%;
 	}
 
-	h1 {
+	.main-banner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		user-select: none;
+	}
+
+	.banner-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+	}
+
+	.main-banner h1 {
 		font-size: 13rem;
 		font-weight: 400;
 		margin-bottom: 2rem;
 	}
-	h2 {
+	.main-banner h2 {
 		font-family: 'PPRightGothic-Wide';
 		font-size: 6rem;
 		font-weight: 800;
 	}
-	p {
+	.main-banner p {
 		position: absolute;
 		bottom: 0;
 		right: 2rem;
