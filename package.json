@@ -34,5 +34,5 @@
 	"dependencies": {
 		"gsap": "^3.12.2"
 	},
-	"browserslist": "last 2 versions"
+	"browserslist": "defaults and supports es6-module"
 }
